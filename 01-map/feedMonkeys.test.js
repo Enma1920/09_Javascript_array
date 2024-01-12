@@ -1,27 +1,23 @@
 import feedMonkeysMap from "./feedMonkeys.js";
 
 describe("Given feedMonkeys", () => {
-    
-    test("when 🍌 is provided as argument Then exècted array should be returned ", () => {
-        
-        const fruit = "🍌";
-        const resultArray = ["🐒 🍌", "🦍 🍌", "🦧 🍌"];
+  test("when 🍌 is provided as argument Then exècted array should be returned ", () => {
+    const fruit = "🍌";
+    const resultArray = ["🐒 🍌", "🦍 🍌", "🦧 🍌"];
 
-        const Monkeys = feedMonkeysMap(fruit);
+    const Monkeys = feedMonkeysMap(fruit);
 
-        expect(Monkeys).toBeDefined();
-        expect(Monkeys).toEqual(resultArray);
-    });
+    expect(Monkeys).toBeDefined();
+    expect(Monkeys).toEqual(resultArray);
+  });
 
-    test("when 🍎 is provided as argument Then exècted array should be returned ", () => {
+  test("when 🍎 is provided as argument Then exècted array should be returned ", () => {
+    const fruit = "🍎";
+    const resultArray = ["🐒 🍎", "🦍 🍎", "🦧 🍎"];
 
-        const fruit = "🍎";
-        const resultArray = ["🐒 🍎", "🦍 🍎", "🦧 🍎"];
+    const Monkeys = feedMonkeysMap(fruit);
 
-        const Monkeys = feedMonkeysMap(fruit);
-
-        expect(Monkeys).toBeDefined();
-        expect(Monkeys).toEqual(resultArray);
-    });
-
+    expect(Monkeys).toBeDefined();
+    expect(Monkeys).toEqual(resultArray);
+  });
 });

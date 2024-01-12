@@ -54,15 +54,13 @@ const USERS = [
   },];
  */
 
-const extendUsersSettings = (users)=>{
-
-    return users.map((user,index)=>{
-        return {
-            ...user, // crea una copia de las propiedades del usuario, y luego se agregan las propiedades adicionales
-            id: index,
-            isEnabled: true
-        }
-    })
-
+const extendUsersSettings = (users) => {
+  return users.map((user, index) => {
+    return {
+      ...user, // crea una copia de las propiedades del usuario, y luego se agregan las propiedades adicionales
+      id: index,
+      isEnabled: true,
+    };
+  });
 };
 export default extendUsersSettings;

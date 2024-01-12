@@ -8,17 +8,13 @@
 
 const NUMBERS = [1, 2, 3, 4, 5];
 
-const sumNumbersFromInitialValue =  (initialValue) =>{
-    
-    let sum = initialValue;
-    const collectionLength = NUMBERS.length;
+const sumNumbersFromInitialValue = (initialValue) => {
+  let sum = initialValue;
+  const collectionLength = NUMBERS.length;
 
-    for(let index = 0; index < collectionLength; index++){
-
-        sum += NUMBERS[index];
-
-    }
-    return sum;
-
-}
+  for (let index = 0; index < collectionLength; index++) {
+    sum += NUMBERS[index];
+  }
+  return sum;
+};
 export default sumNumbersFromInitialValue;
