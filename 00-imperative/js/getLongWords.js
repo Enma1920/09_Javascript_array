@@ -16,10 +16,12 @@ const getLongWords = (wordsArray) => {
 
   for (let i = 0; i < collectionLength; i++) {
     const word = wordsArray[i];
+
     if (word.length >= 5) {
       result.push(word);
     }
   }
+
   return result;
 };
 
