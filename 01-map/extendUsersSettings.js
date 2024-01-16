@@ -24,7 +24,6 @@ const USERS = [
  * Add property 'id' with index value
  * Add property 'isEnabled' as true
  */
-
 /**
  * Given USERS array, define function 'extendUsersSettings' to extend users properties
  *
@@ -54,3 +53,15 @@ const USERS = [
     isEnabled: true
   },];
  */
+
+const extendUsersSettings = (users) => {
+  return users.map((user, index) => {
+    return {
+      ...user,
+      id: index,
+      isEnabled: true,
+    };
+  });
+};
+
+export default extendUsersSettings;
