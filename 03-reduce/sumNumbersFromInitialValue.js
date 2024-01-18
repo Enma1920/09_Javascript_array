@@ -7,17 +7,13 @@
 
 const NUMBERS = [1, 2, 3, 4, 5];
 
-const sumNumbersFromInitialValue = (numbers, initialValue)=>{
+const sumNumbersFromInitialValue = (numbers, initialValue) => {
+  const totalSum = numbers.reduce((initialValue, currentValue) => {
+    const sum = initialValue + currentValue;
+    return sum;
+  }, initialValue);
 
-    const totalSum = numbers.reduce((initialValue, currentValue)=>{
-
-        const sum = initialValue + currentValue;
-        return sum;
-
-    }, initialValue);
-
-    return totalSum;
-
-}
+  return totalSum;
+};
 
 export default sumNumbersFromInitialValue;

@@ -19,16 +19,12 @@ const VOTERS = [
   { name: "Zack", age: 19, voted: false },
 ];
 
-const getTotalVoters = (voters)=>{
-
-  const totalVoters = voters.reduce((count, voter) =>{
-    
+const getTotalVoters = (voters) => {
+  const totalVoters = voters.reduce((count, voter) => {
     return voter.voted ? count + 1 : count;
-
-  },0);
+  }, 0);
 
   return totalVoters;
-
-}
+};
 
 export default getTotalVoters;

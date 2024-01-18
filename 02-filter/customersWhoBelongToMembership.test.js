@@ -24,12 +24,14 @@ describe("Given customersWhoBelongToMembership function", () => {
       },
     ];
 
-    const EXPECTED_RESULT = [{ name: 'Foo', member: true },  { name: 'Fizz', member: true },  { name: 'FizzBuzz', member: true }];
+    const EXPECTED_RESULT = [
+      { name: "Foo", member: true },
+      { name: "Fizz", member: true },
+      { name: "FizzBuzz", member: true },
+    ];
 
     const RESULT = customersWhoBelongToMembership(CUSTOMERS);
 
     expect(RESULT).toEqual(EXPECTED_RESULT);
-
   });
-
 });

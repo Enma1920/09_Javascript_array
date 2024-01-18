@@ -7,15 +7,12 @@
 const COUNTERS = [2, 25, 43, 12, 67, 42, 28];
 
 const getEvensOnly = (counters) => {
+  const evenNumbers = counters.filter((counter) => {
+    const even = counter % 2 === 0;
+    return even;
+  });
 
-    const evenNumbers = counters.filter((counter)=>{
-
-        const even = counter % 2 === 0;
-        return even;
-
-    });
-    
-    return evenNumbers;
-}
+  return evenNumbers;
+};
 
 export default getEvensOnly;

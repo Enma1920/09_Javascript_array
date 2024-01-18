@@ -1,7 +1,6 @@
 import getTotalVoters from "./getTotalVoters.js";
 describe("Given getTotalVoters function ", () => {
   test("When receives VOTERS array. Then returns a count of how many people voted ", () => {
-
     const VOTERS = [
       { name: "Bob", age: 30, voted: true },
       { name: "Jake", age: 32, voted: true },
@@ -22,6 +21,5 @@ describe("Given getTotalVoters function ", () => {
     const RESULT = getTotalVoters(VOTERS);
 
     expect(RESULT).toEqual(EXPECTED_RESULT);
-    
   });
 });

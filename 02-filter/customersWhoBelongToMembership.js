@@ -27,17 +27,13 @@ const CUSTOMERS = [
   },
 ];
 
-const customersWhoBelongToMembership = (customers) =>{
-
-  const customersFiltered = customers.filter((customer)=>{
-
+const customersWhoBelongToMembership = (customers) => {
+  const customersFiltered = customers.filter((customer) => {
     const memberShip = customer.member;
     return memberShip;
-
   });
 
   return customersFiltered;
+};
 
-}
-
-export default customersWhoBelongToMembership; 
+export default customersWhoBelongToMembership;
