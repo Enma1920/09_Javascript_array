@@ -5,3 +5,17 @@
  */
 
 const COUNTRIES = ["United Kingdom", "Italy", "France", "Portugal", "Greece"];
+
+const extractCountriesWithFiveCharactersOrFewer = (countries) =>{
+
+    const contruiesFiltered = countries.filter((country)=>{
+
+        const greaterThan5 = country.length <= 5;
+        return greaterThan5;
+
+    });
+    return contruiesFiltered;
+
+}
+
+export default extractCountriesWithFiveCharactersOrFewer;
