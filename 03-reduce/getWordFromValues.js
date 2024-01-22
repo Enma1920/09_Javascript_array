@@ -7,8 +7,8 @@
 const VALUES = [1, 2, 3];
 
 const getWordFromValues = (values) => {
-  const wordArray = values.reduce((accumulator, currentValue) => {
-    const valueToString = accumulator + currentValue;
+  const wordArray = values.reduce((word, currentValue) => {
+    const valueToString = word + currentValue;
     return valueToString;
   }, "");
   return wordArray;

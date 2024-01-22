@@ -7,11 +7,11 @@
 
 const NUMBERS = [1, 2, 3, 4, 5];
 
-const sumNumbersFromInitialValue = (numbers, initialValue) => {
-  const totalSum = numbers.reduce((initialValue, currentValue) => {
-    const sum = initialValue + currentValue;
+const sumNumbersFromInitialValue = (numbers, partialSum) => {
+  const totalSum = numbers.reduce((partialSum, currentValue) => {
+    const sum = partialSum + currentValue;
     return sum;
-  }, initialValue);
+  }, partialSum);
 
   return totalSum;
 };
