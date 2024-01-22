@@ -26,3 +26,14 @@ const CUSTOMERS = [
     member: true,
   },
 ];
+
+const customersWhoBelongToMembership = (customers) => {
+  const customersFiltered = customers.filter((customer) => {
+    const memberShip = customer.member;
+    return memberShip;
+  });
+
+  return customersFiltered;
+};
+
+export default customersWhoBelongToMembership;
